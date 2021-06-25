@@ -593,14 +593,14 @@ body.Nocturno header{
 }
 
 body.Nocturno .Logo{
-    content:url(/assets/Logo-modo-noc.svg)
+    content:url(assets/Logo-modo-noc.svg)
 }
 body.Nocturno .BtmCrearGif{
-    content: url(/assets/CTA-crear-gifo-modo-noc.svg);
+    content: url(assets/CTA-crear-gifo-modo-noc.svg);
 }
 
 body.Nocturno .BtmCrearGif:hover{
-    content: url(/assets/CTA-crear-gifo-hover-modo-noc.svg);
+    content: url(assets/CTA-crear-gifo-hover-modo-noc.svg);
 }
 
 body.Nocturno #span1{
@@ -655,19 +655,19 @@ body.Nocturno footer{
 }
 
 body.Nocturno .btnIzquierda{
-    content: url(/assets/button-slider-left-md-noct.svg);
+    content: url(assets/button-slider-left-md-noct.svg);
 }
 
 body.Nocturno .btnDerecha{
-    content: url(/assets/button-slider-right-md-noct.svg);
+    content: url(assets/button-slider-right-md-noct.svg);
 }
 
 body.Nocturno .btnIzquierda:hover{
-    content: url(/assets/);
+    content: url(assets/);
 }
 
 body.Nocturno .btnDerecha:hover{
-    content: url(/assets/);
+    content: url(assets/);
 }
 
 .hide{
@@ -771,7 +771,7 @@ body.Nocturno .btnDerecha:hover{
 
     .BtmCrearGif:hover{
         border-bottom: none ;
-        content: url(/assets/CTA-crear-gifo-active.svg);
+        content: url(assets/CTA-crear-gifo-active.svg);
     }
 
 
@@ -906,11 +906,11 @@ body.Nocturno .btnDerecha:hover{
     }
     
     .btnIzquierda:hover{
-        content: url(/assets/button-slider-left-hover.svg);
+        content: url(assets/button-slider-left-hover.svg);
     }
 
     .btnDerecha:hover{
-        content: url(/assets/Button-Slider-right-hover.svg);
+        content: url(assets/Button-Slider-right-hover.svg);
     }
 
     .Text{
@@ -1247,7 +1247,7 @@ body.Nocturno .btnDerecha:hover{
         background-color: #5c47a5;
     }
     body.Nocturno .camar{
-        content: url(/assets/camara-modo-noc.svg);
+        content: url(assets/camara-modo-noc.svg);
     
     }
     body.Nocturno .lupa{
@@ -1259,7 +1259,7 @@ body.Nocturno .btnDerecha:hover{
     }
     
     body.Nocturno .film img{
-    content: url(/assets/pelicula-modo-noc.svg);
+    content: url(assets/pelicula-modo-noc.svg);
     
     }
     

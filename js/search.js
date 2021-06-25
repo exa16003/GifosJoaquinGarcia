@@ -117,14 +117,14 @@ let mostarBotones=(gif,div,img)=>{
     Usuario.textContent = gif.username    
     name.textContent= gif.title
     if(favs.indexOf(gif.id)>-1){
-      corazon.setAttribute("src","/assets/icon-fav-active.svg")
+      corazon.setAttribute("src","assets/icon-fav-active.svg")
     }else{
-      corazon.setAttribute("src","/assets/icon-fav.svg")
+      corazon.setAttribute("src","assets/icon-fav.svg")
     }
     
-    descarga.setAttribute("src","/assets/icon-download.svg")
+    descarga.setAttribute("src","assets/icon-download.svg")
 
-    agrandar.setAttribute("src","/assets/icon-max-normal.svg")
+    agrandar.setAttribute("src","assets/icon-max-normal.svg")
     
     MascaraDiv.classList.add("MascaraDiv")
     contenedortexto.classList.add("ContenedorTexto")
@@ -157,8 +157,8 @@ let mostarBotones=(gif,div,img)=>{
                     <p class="Titulo">${gif.title}</p>
                 </div>
                 <div>
-                    <button class="fav_btn"><img src="/assets/icon-fav-hover.svg" alt="fav-gif" id="icon-fav-${gif.id}"></button>
-                    <button class="download_btn" ><img src="/assets/icon-download.svg" alt="download-gif" onclick="descargarGifo('${gif.images.original.url}','${gif.slug}')"></button>
+                    <button class="fav_btn"><img src="assets/icon-fav-hover.svg" alt="fav-gif" id="icon-fav-${gif.id}"></button>
+                    <button class="download_btn" ><img src="assets/icon-download.svg" alt="download-gif" onclick="descargarGifo('${gif.images.original.url}','${gif.slug}')"></button>
                 </div>
             </div>
         </div>
@@ -176,11 +176,11 @@ let mostarBotones=(gif,div,img)=>{
     corazon.addEventListener('click', () => {
       let  index=favs.indexOf(gif.id);
       if(index===-1){
-        corazon.setAttribute("src","/assets/icon-fav-active.svg")
+        corazon.setAttribute("src","assets/icon-fav-active.svg")
         let gifid = gif.id
         favs.push(gifid);
       }else{
-        corazon.setAttribute("src","/assets/icon-fav.svg")
+        corazon.setAttribute("src","assets/icon-fav.svg")
         favs.splice(index,1)
       }
       localStorage.setItem("favs",favs)    

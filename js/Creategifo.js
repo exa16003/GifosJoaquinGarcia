@@ -151,14 +151,14 @@ function uploadGifo() {
 
       /**Mostrar nuevo gifo */
     overlay_actions.classList.remove("hide");
-    overlay_icon.src = "/assets/check.svg";
+    overlay_icon.src = "assets/check.svg";
     overlay_text.innerText = "GIFO subido con éxito";
     overlay_actions.innerHTML = `
             <button class="gifo__btn" id="download_btn" onclick="downloadMyGifo('${myGifoId}')">
-                <img src="/assets/icon-download-hover.svg" alt="download">
+                <img src="assets/icon-download-hover.svg" alt="download">
             </button>
             <button class="gifo__btn" id="link_btn">
-                <img src="/assets/icon-link-hover.svg" alt="link">
+                <img src="assets/icon-link-hover.svg" alt="link">
             </button>`;
     upload_btn.classList.add("invisible");
 
