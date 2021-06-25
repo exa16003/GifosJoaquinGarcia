@@ -663,11 +663,11 @@ body.Nocturno .btnDerecha{
 }
 
 body.Nocturno .btnIzquierda:hover{
-    content: url(assets/);
+    content: url(assets/button-slider-right-md-noct.svg);
 }
 
 body.Nocturno .btnDerecha:hover{
-    content: url(assets/);
+    content: url(assets/button-slider-left-md-noct.svg);
 }
 
 .hide{
@@ -935,7 +935,7 @@ body.Nocturno .btnDerecha:hover{
         text-align: center;
     }
     
-    .fav , .MisGifos, .favImg{
+    .fav , .MisGifos , .favImg{
         height: 100%;
         padding: 1rem 1.5rem;
         display: flex;
