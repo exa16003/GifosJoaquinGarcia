@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>Gifos-joaquín García </title>
+</head>
+<body>
+    <header>
+        <a href="home.html"><img src="/assets/logo-desktop.svg" alt="Logo" class="Logo"></a>
+        <div>     
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu" class="lbl-menu">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+            </label>
+                <nav class="menu" >
+                    <ul>
+                        <li><a  href="#" tabindex="1" class="ModoNoct" id="ModoNocturno">MODO NOCTURNO</a></li>
+                        <li class="line"></li>
+                        <li><a  href="# " tabindex="2" id="MenuMisGifos">MIS GIFOS</a></li>
+                        <li class="line"></li>
+                        <li><a href="#" tabindex="3" id="MenuFavoritos">FAVORITOS</a></li>
+                        <li class="line"></li>
+                        <li><a  class="BtmCrearGif" href="#" tabindex="4"><img src="/assets/button-crear-gifo.svg" alt=""></a></li>                
+                    </ul>
+                </nav>  
+        </div> 
+    </header>
+    <main>
+        <section class="home">
+            <h1>Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span></h1>
+            <img src="/assets/ilustra_header.svg" alt="ilustracion-home" class="IlustracionHome">
+            <form  class="Formulario">
+                <div class="contenedor-form">
+                    <button class="lupa hide" id="Lupa1"><i class="fas fa-search fa-2x"></i></button>
+                    <input class="Busqueda" id="Value" type="text" autocomplete="off" placeholder="Busca GIFOS y más" >
+                    <button class="lupa" ><i id="Lupa2" class="fas fa-search fa-2x" ></i></button>
+                    <button class=" hide lupa" id="BtnX"><i class="fas fa-times fa-2x"></i></button>
+                </div>
+                <div class="barraBusqueda ">
+                    <ul class="UlList"></ul>
+                </div>
+            </form>
+            <h4>Trending:</h4>
+            <div class="TexTrending"></div>
+            <div class="div-line hide"></div>
+            <div class="busquedah2"></div>
+            <div class="impresionBusq impresion"></div>
+            <div class="NoBusqueda hide">
+                <img src="/assets/icon-busqueda-sin-resultado.svg" alt="">
+                <p>Intenta con otra búsqueda</p>
+            </div>
+            <a class="VerMas hide ">Vermas</a>
+        </section>
+        <section class="fav">
+            <img src="/assets/icon-favoritos.svg" alt="fav" class="ImgChica favImg">
+            <h2>Favoritos</h2>
+            <div class="ImpresionFav "></div>
+                <div class="favImg" >
+                    <img src="/assets/icon-mis-gifos-sin-contenido.svg" alt="iconoVacio" class="ImgGrande">
+                    <h3>Guarda tu primer GIFO en favoritos para que se muestre aquí</h3>
+                </div>
+        </section>
+        <section class="MisGifos">
+            <img src="/assets/icon-mis-gifos.svg" alt="Migifo" class="ImgChica ">
+            <h2>Mis GIFOS</h2>
+            <div class="ImpresionMigif "></div>                
+            <div class="MiGifImg">
+                <img src="/assets/icon-mis-gifos-sin-contenido.svg" alt="iconoVacio" class="ImgGrande">
+                <h3>¡Animate a crear tu primer GIFO!</h3>
+            </div>                
+        </section>
+        <section class="CrearGifo">
+            <div class="layeout">               
+                <div class="camara">
+                    <div class="camar"><img src="/assets/camara.svg" alt="camara"></div>
+                    <div class="luz"><img src="/assets/Path-2.svg" alt="luz"></div>
+                </div>
+                <div class="upload">
+                    <div class="IzqSup"></div>
+                    <div class="IzqInf"></div>
+                    <div class="DerSup"></div>
+                    <div class="DerInf"></div>
+                    <div>
+                        <h2 id="TituloUp">Aquí podrás crear tus propios <span>GIFOS</span></h2>
+                        <p id="TituloTex">Crea tu GIFO en solo 3 pasos! (solo necesitas una cámara para grabar un video)</p>
+                    </div>
+                </div>
+                <div class="vacio"></div>
+            </div>
+            <div class="controles">
+                <div class="vacio"></div>
+                <div class="control">
+                    <div class="numeros">
+                        <p class="botonPaso" id="b1">1</p>
+                        <p class="botonPaso" id="b2">2</p>
+                        <p class="botonPaso" id="b3">3</p>
+                    </div>
+                    <div class="contador">
+                        <p class="contadorGrabando contadorTexto "></p>
+                        <button class="contadorRepetir hide contadorTexto">Repetir Captura</button>
+                    </div>
+                    <div class="overlay hide " id="overlay_video">
+                        <div class="gifo__buttons" id="overlay_video_actions">                            
+                        </div>
+                        <div class="overlay__info" id="overlay_video_info"><img src="/assets/loader.svg" class="overlay__icon" alt="loading gifo" id="overlay_video_icon"/>
+                        <p class="contadorTexto" id="overlay_video_text">Estamos subiendo tu GIFO</p>
+                        </div>
+                    </div>  
+                    <video class="recording hide" src="#" id="recording_video"></video>
+                    <img src="#" id="recorded_gifo" class="recording"/>
+                    <div class="barra"></div>
+                    <a href="#" class="Comenzar">Comenzar</a>
+                    <a href="#" class="Grabar hide">Grabar</a>
+                    <a href="#" class="Finzalizar hide">Finalizar</a>
+                    <a href="#" class="Subir hide">Subir Gifo</a>
+                </div>
+                <div class="film">
+                    <img src="/assets/pelicula.svg" alt="film-img">
+                </div>
+            </div>
+        </section>
+        <section class="trending">
+            <h2>Trending GIFOS</h2>
+            <p class="Text">Mira los últimos <br> GIFOS de nuestra comunidad.</p>
+            <div class="Trending-contenedor">
+                <a href=""> <img src="/assets/button-slider-left.svg" alt="izquierda" class="btnIzquierda"></a>
+                <div class="trendingContenedor"></div>
+                <a href=""><img src="/assets/Button-Slider-right.svg" alt="derecha" class="btnDerecha"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="redes">
+            <p class="textoChico">Compartir en:</p>
+            <div class="SocialIcon">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+        <div>
+            <p class="textoChico">© GIFOS 2021 — All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="/js/ModoNoct.js"></script>
+    <script src="/js/CallApi.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/Creategifo.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    
+</body>
+</html>

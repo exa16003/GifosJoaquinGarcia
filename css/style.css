@@ -1,0 +1,1281 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*Header - nav*/ 
+.BotonX{
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #572ee5 ;
+    padding: 10px 0px;
+}
+.fav_btn, .download_btn{
+    background-color: transparent;
+    border: none;
+}
+
+.item i{
+    padding: 0px 10px;
+}
+.usuario{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.94rem;
+    line-height: 1.13rem;
+}
+
+.Titulo{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.56rem;
+    text-align: center;
+}
+
+.Fullgif-img{
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.info{
+    padding: 10px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.textos{
+    width: 70%
+}
+
+.Fullgif-contenedor{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: transparent;
+    padding: 5rem 0;
+}
+
+.fullgif{  
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 1000;
+    padding: 0vh 2rem;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000000;
+}
+
+.limiteTrending {
+    height: 100%;
+}
+
+.MascaraDiv{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(85, 46, 229, 0);
+    z-index: 10;
+    
+}
+
+.MascaraDiv:hover{
+    background-color: rgba(85, 46, 229, 0.5);
+    
+}
+.MascaraDiv:hover .ContenedorBoton,
+.MascaraDiv:hover .ContenedorTexto{
+    opacity: 1;
+}
+
+.ContenedorBoton{
+    position: absolute;
+    left: 1rem;
+    opacity:0 ;
+    z-index: 5;
+}
+
+.ContenedorTexto{
+    display: flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    top: 6rem;
+    color: #ffffff;
+    opacity: 0;
+}
+
+.ContenedorTexto p  {
+    padding: 5px;
+    margin-top: -10px;
+}
+
+.ContenedorTexto h5  {
+    padding: 5px;
+}
+
+.ContenedorBoton img{
+    padding: 5px;
+}
+
+.ImpresionImg{ 
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.trendingContenedor{
+    width: 80%;
+    height: 11.69rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btnIzquierda{
+    display: none;
+} 
+
+.btnDerecha{
+    display: none;
+} 
+.contenedor-form{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.trending__links{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    display: inline;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 1.50rem;
+    line-height: 1.2rem;
+    text-align: center;
+}   
+
+.lupa{
+    color: #5c47a5;
+    padding: 0 20 0 0;
+    width: 10%;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+}
+
+.Formulario{
+    width: 96%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    border: 3px solid #572ee5;
+    border-radius: 27px;
+}
+
+.item:first-child {
+    border-top: 1px solid #9cafc3;
+    margin-top: 19px;
+    
+}
+.item:last-child{
+    margin-bottom: 19px;
+}
+
+.item{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    font-size: 1.5rem;
+    justify-content: flex-end;
+    background-color: transparent;
+    color: #9cafc3;
+    padding: 10px 0px;
+    }
+
+.NoBusqueda{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.NoBusqueda p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: #5ed7c6;
+
+}
+
+.NoBusqueda img{
+    width: 100%;
+
+}
+.sugerencia{
+    width: 100%;
+    padding: 0;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #9cafc3;
+    list-style: none;
+    padding: 0;
+    padding-top: 1rem;
+    cursor: pointer;
+    
+}
+
+.div-line{
+    width: 25%;
+    height: 0.01rem;
+    margin: 2.88rem auto;
+    background-color: #9cafc3;
+}
+
+
+
+.limiteDiv{
+    margin: 0px 13px;
+}
+
+.limiteTrending{
+    width: 20.6rem;
+}
+
+body{
+    transition: .3s ease all ;
+}
+
+body.Nocturno{
+    background-color: #37383c;
+    color: #ffffff;
+}
+
+header{
+    border-top: 0.31rem solid #572ee5;
+    width: 100%;
+    padding:10px 0px;
+
+    /*flex*/
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.Logo{
+    padding: 0px 0px 0px 4px;
+    width: 90%;
+}
+
+
+/*Menu*/
+
+
+.lbl-menu{
+    width: 60px;
+    height: 3px;
+    position: relative;
+    right: 30px;
+}
+
+.lbl-menu #span1,#span2,#span3{
+    position: absolute;
+    content: "";
+    background-color: #572ee5;
+    width: 18px;
+    height: 2px;
+    border-radius: 5px;
+    transition: all 400ms ease;
+    margin-top: 20px;
+}
+
+
+#span2{
+    background-color: #572ee5;
+    top: 7px;
+}
+
+#span3{
+    background-color: #572ee5;
+    top: 14px;
+}
+
+#btn-menu{
+    
+    display: none;
+}
+
+#btn-menu:checked ~ .lbl-menu #span1{
+    transform: rotate(140deg);
+    top: 10px;
+}
+
+#btn-menu:checked ~ .lbl-menu #span2{
+    opacity: 0;
+}
+
+#btn-menu:checked ~ .lbl-menu #span3{
+    transform: rotate(-140deg);
+    top: 10px;
+}
+
+ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+
+}
+
+.menu{
+    height: 57%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    margin-top: 59px;
+    display: none;
+    background-color:#572EE5;
+    opacity: 90%;
+    z-index: 10;
+    
+}
+
+.line{
+    width: 25%;
+    border-bottom: 1px solid white;
+    margin-left: 37%;
+    
+}
+
+.menu ul li>a{
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+    text-decoration: none;
+    
+}
+
+#btn-menu:checked ~ .menu{
+    display: flex;
+    
+}
+
+.home{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.BtmCrearGif{
+    visibility: hidden;
+}
+
+h1{
+    color: #572EE5;
+    text-align: center;
+    padding: 15px;
+    font-family: Montserrat;
+}
+
+span{
+    color: #5ed7c6;
+}
+
+.impresion{
+    position: relative;
+    width: 90%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.IlustracionHome{
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.Busqueda{
+    width: 90%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    justify-content: center;
+    padding: 10px;
+}
+.VerMas{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 0.94rem;
+    line-height: 1.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin: 4.88rem auto;
+    padding: 1rem 2.25rem;
+    width: auto;
+    border: 1px solid #572ee5;
+    border-radius: 1.9rem;
+    text-align: center;
+    display: inline-block;
+    outline: none;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    color: #572ee5;
+}
+
+h4{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.13rem;
+    line-height: 1.56rem;
+    text-align: center;
+    color: #572ee5;
+    padding-top: 10px;
+}
+
+.trending{
+    width: 100%;
+    background-color: #f3f5f8;
+}
+
+.Text{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.44rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.TexTrending{
+    
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    color: #572ee5;
+}
+
+.fav{
+    height: 100%;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+
+.ImgChica{
+    width: 50%;
+    max-width: 23px;
+    max-height: 21px;
+}
+
+.ImgGrande{
+    width: 9.38rem;
+    margin-bottom: 2rem;
+    
+}
+
+h2{
+    padding: 8px;
+    text-align: center;
+    color: #572ee5;
+    font-family: "Montserrat", sans-serif;
+}
+
+h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #5ed7c6;
+}
+
+.MisGifos{
+    height: 100%;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.CrearGifo{
+    display: none;
+}
+
+footer{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height:  auto;
+    border-bottom: 0.31rem solid #572ee5;
+}
+
+.redes{
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+}
+
+.SocialIcon{
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    font-style: none;
+    
+}
+
+.Textochico{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.88rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.SocialIcon a {
+    color: #37383c;
+}
+
+.SocialIcon a:hover{
+    color: #572ee5;
+}
+/* css Nocturno---------------------------------------*/
+body.Nocturno header{
+    border-top: 0.31rem solid #222326;
+    background-color: #37383c;
+}
+
+body.Nocturno .Logo{
+    content:url(/assets/Logo-modo-noc.svg)
+}
+body.Nocturno .BtmCrearGif{
+    content: url(/assets/CTA-crear-gifo-modo-noc.svg);
+}
+
+body.Nocturno .BtmCrearGif:hover{
+    content: url(/assets/CTA-crear-gifo-hover-modo-noc.svg);
+}
+
+body.Nocturno #span1{
+    background-color:  #ffffff;
+}
+
+body.Nocturno #span2{
+    background-color:  #ffffff;    
+}
+
+body.Nocturno #span3{
+    background-color:  #ffffff;
+}
+
+body.Nocturno .menu{
+    background-color: #37383c;
+}
+
+body.Nocturno .menu a{
+    color: #ffffff;
+}
+
+body.Nocturno h1{
+    color: #ffffff;
+}
+
+body.Nocturno h2{
+    color: #ffffff;
+}
+
+body.Nocturno h4{
+    color: #ffffff;
+}
+body.Nocturno h3{
+    color: #5ed7c6;
+}
+body.Nocturno .VerMas{
+    border: 1px solid #ffffff;
+    color: #f3f5f8;
+}
+
+body.Nocturno .TexTrending{
+    color: #ffffff;
+}
+
+body.Nocturno .trending{
+    background-color: #222326;
+}
+
+body.Nocturno footer{
+    border-bottom: 0.31rem solid #222326;
+}
+
+body.Nocturno .btnIzquierda{
+    content: url(/assets/button-slider-left-md-noct.svg);
+}
+
+body.Nocturno .btnDerecha{
+    content: url(/assets/button-slider-right-md-noct.svg);
+}
+
+body.Nocturno .btnIzquierda:hover{
+    content: url(/assets/);
+}
+
+body.Nocturno .btnDerecha:hover{
+    content: url(/assets/);
+}
+
+.hide{
+    display: none;
+}
+
+/*--------------------escritorio---------------------------*/
+@media only screen and (min-width: 768px){
+    
+
+
+.ContenedorBoton{
+        left: 11rem;
+    
+}
+
+.ContenedorTexto{
+        top: 13rem;
+        color: #ffffff;
+}
+
+.Formulario{
+    width: 33%;
+    justify-content: center;
+}
+
+.trendingContenedor{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 16rem;
+    margin-bottom: 4rem;
+    z-index: 1;
+}
+
+    .VerMas:hover{
+        color: white;
+        background-color: #5c47a5;
+    }
+    
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        height: 76px;
+        background-color: #ffffff;
+        
+    }
+
+    .BtmCrearGif{
+        visibility: visible;
+    }
+
+    .Trending-contenedor{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    .home{
+        align-items: center;
+    }
+
+    .Logo{
+        padding: 10px;
+        width: 90%;
+    }
+    
+    /*Menu*/
+    
+    
+    .lbl-menu{
+        display: none;
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        visibility: visible;
+        background-color: transparent;
+        position: relative;
+        top: 15px;
+        padding: 0px;
+        width: 100%;
+        height: 50px;
+        
+    }
+    
+    ul a:hover{
+        border-bottom: 2px solid #5ed7c6;
+    }
+
+    .BtmCrearGif:hover{
+        border-bottom: none ;
+        content: url(/assets/CTA-crear-gifo-active.svg);
+    }
+
+
+    .menu{
+        height: 76px;
+        width: 100%;
+        position: initial;
+        /*flex*/
+        display: flex;
+        margin-top: 0px;
+        background-color: #ffffff;
+        opacity: 100%;
+        
+    }
+
+    header{
+        margin-top: 0px;
+        padding:0px;
+    }
+    
+    .line{
+        display: none;
+        
+    }
+    
+    .menu ul li>a{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 1.88rem;
+        text-transform: capitalize;
+        letter-spacing: 0;
+        color: #572ee5;
+        text-transform: uppercase;
+        
+        
+    }
+
+    .trending__links{
+        margin-left: 0.5rem;
+        cursor: pointer;
+        display: inline;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 1.50rem;
+        line-height: 1.56rem;
+        text-align: center;
+    }   
+
+    #btn-menu:checked ~ .menu{
+        display: none;
+        
+    }
+    
+    .home{
+        padding: 1rem;
+    }
+    
+    h1{
+        max-width: 35.45rem;
+        margin: 0 auto;
+        font-size: 2.5rem;
+    }
+    
+    span{
+        color: #5ed7c6;
+    }
+    
+    .impresion{
+        width: 60%;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 20%);
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .btnIzquierda{
+        display: block;
+        margin-left: 50px;
+    }
+    
+    .btnDerecha{
+        display: block;
+        margin-right: 50px;
+    }
+    .IlustracionHome{
+        width: 33.94rem;
+        margin-top: 1.5rem;
+    }
+    
+
+    .contenedor-form{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .lupa i {
+        width: 30%;
+    }
+
+    .barraBusqueda{
+        height: auto;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    .UlList{
+    height: auto;
+    display: block;
+    }
+
+    .ImagenLupa{
+        padding: 0px 20px;
+    }
+    
+    
+    h4{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 1.13rem;
+        line-height: 1.56rem;
+        text-align: center
+    }
+    
+    .trending{
+        width: 100%;
+        background-color: #f3f5f8;
+        z-index: -2;
+    }
+    
+    .btnIzquierda:hover{
+        content: url(/assets/button-slider-left-hover.svg);
+    }
+
+    .btnDerecha:hover{
+        content: url(/assets/Button-Slider-right-hover.svg);
+    }
+
+    .Text{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.44rem;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .MascaraDiv{
+        z-index: initial;
+    
+    }
+
+    .TexTrending{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.56rem;
+        text-align: center;
+    }
+    
+    .fav , .MisGifos, .favImg{
+        height: 100%;
+        padding: 1rem 1.5rem;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center
+    }
+    
+    h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.56rem;
+    line-height: 1.88rem;
+    text-align: center;
+    margin: 15px;
+    }
+    
+    .CrearGifo{
+        display: block;
+    }
+    
+    footer{
+        width: 78%;
+        display: flex;
+        flex-flow: row ;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 9.75rem;
+    }
+    
+    .redes{
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 20%;
+        padding: 0;
+    }
+
+    .Textochico{
+        color: #000000;
+    }
+    
+    .SocialIcon{
+        width: 50%;
+        margin: 0;
+        
+    }
+
+    .impresion{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    
+    .CrearGifo{
+        width: 100%;
+        padding: 10px 10px;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    .camara{
+        width: 20%;
+        display: flex;
+        flex-flow: row nowrap;
+        padding-left: 30px;
+    }
+    
+    
+    .luz{
+        padding-top: 20px;
+    }
+
+    .upload{
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 39%;
+        border: 1px solid #572ee5;
+        padding: 100px;
+        position: relative
+    }
+    
+    .upload{ 
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.44rem;
+    }
+    .IzqSup{
+        position: absolute;
+        border-left: 1px solid #50e3c2;
+        border-top: 1px solid #50e3c2;
+        left: 0;
+        top: 0;
+        height: 25px;
+        width: 27px;
+        margin: 15px;
+        
+        
+    }
+    
+    .IzqInf{
+        position: absolute;
+        border-left: 1px solid #50e3c2;
+        border-bottom: 1px solid #50e3c2;
+        left: 0;
+        bottom: 0;
+        height: 25px;
+        width: 27px;
+        margin: 15px;
+        
+        }
+    
+    .DerSup{
+        position: absolute;
+        border-right: 1px solid #50e3c2;
+        border-top: 1px solid #50e3c2;
+        right: 0;
+        top: 0;
+        height: 25px;
+        width: 27px;
+        margin: 15px;
+    }
+
+    .DerInf{
+        position: absolute;
+        border-right: 1px solid #50e3c2;
+        border-bottom: 1px solid #50e3c2;
+        right: 0;
+        bottom: 0;
+        height: 25px;
+        width: 27px;
+        margin: 15px;
+    }
+    
+    .layeout{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .controles{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .control{
+        width: 60%;
+        position: relative;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    
+    .contador{
+    text-align: right;
+    position: absolute;
+    top: 15%;
+    right: 8%;
+    }
+
+    .contadorTexto{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 0.94rem;
+        line-height: 1.38;
+        text-align: center
+    }
+
+    .botonPaso{
+        background-color: #ffffff;
+        border: 1px solid #572ee5;
+        color: #572ee5;
+    }
+
+    .step_now {
+        background-color: #572ee5;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+    }
+    
+
+    .gifo__buttons{
+        opacity: 0.6;
+        position: absolute;
+        left: 89%;
+        top: 6%;
+        width: 100%;
+        height: 100%;
+    }
+
+    #overlay_video_text{
+        color: white;
+    }
+    .recording{
+        width: 61%;
+        position: absolute;
+        bottom: 115%;
+        left: 25%;    
+    }
+
+    .overlay{
+        position: absolute;
+        background-color: #572ee5;
+        opacity: 0.6;
+        z-index: 6;
+        height: 353%;
+        width: 85%;
+        bottom: 100%;
+        left: 13%
+    }
+
+    .overlay__info{ 
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center
+    }
+
+    }
+    .overlay__icon{
+        width: 50px;
+        padding-top: 30%;
+    }
+    .contadorGrabando{
+    text-align: right;
+    }
+
+    .contadorRepetir{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #572ee5;
+    }
+    .barra{
+        width: 100%;
+        height: 0.43rem;
+        background-color: #572ee5;
+        margin: 20px 0px 20px 140px;
+    }
+
+    .numeros{
+        margin-left: 115px;
+        width: 20%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 20px 10px 10px 10px ;
+        
+        
+    }
+
+    .numeros p{
+        font-family: "Roboto", sans-serif;
+        padding: 0.4rem 0.6rem;
+        font-size: 1.13rem;
+        line-height: 0.94rem;
+        border-radius: 60%;
+        
+    }
+    
+
+    .vacio{
+        width: 20%;
+        display: block;
+    }
+
+    .film{
+        padding-left: 100px;
+        margin-bottom: 40px;
+        width: 20%;
+    }
+
+    .Comenzar, .Grabar , .Finzalizar, .Subir {
+        
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 0.94rem;
+        line-height: 1.88rem;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        padding: 1rem 2.25rem;
+        width: auto;
+        border: 1px solid #572ee5;
+        border-radius: 1.9rem;
+        cursor: pointer;
+        text-align: center;
+        outline: none;
+        text-decoration: none;
+        margin-left: 100px;
+        
+    }
+
+
+    .Comenzar:hover, .Grabar:hover , .Finzalizar:hover, .Subir:hover{
+        color: white;
+        background-color: #5c47a5;
+    }
+    body.Nocturno .camar{
+        content: url(/assets/camara-modo-noc.svg);
+    
+    }
+    body.Nocturno .lupa{
+        color: #ffffff;
+    }
+
+    body.Nocturno .Formulario{
+        border: solid 2px #ffffff;
+    }
+    
+    body.Nocturno .film img{
+    content: url(/assets/pelicula-modo-noc.svg);
+    
+    }
+    
+    body.Nocturno .numeros p{
+        color: white;
+        border-color: white;
+    }
+    
+    body.Nocturno .SocialIcon a {
+        color: white;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    body.Nocturno #Value{
+        color: white;
+    }
