@@ -1230,13 +1230,25 @@ body.Nocturno footer{
         margin-left: 100px;
         
     }
+    
+    
+    body.Nocturno .Comenzar,
+    .Grabar ,
+    .Finzalizar,
+    .Subir {
+        background-color: #37383c;
+        border-color: white;
+        color:white;
 
+    }
+    
     .Comenzar:hover, 
     .Grabar:hover , 
     .Finzalizar:hover, 
     .Subir:hover{
         color: white;
         background-color: #5c47a5;
+        border-color:#5c47a5 ;
     }
     
     body.Nocturno .lupa{
@@ -1246,11 +1258,10 @@ body.Nocturno footer{
     body.Nocturno .Formulario{
         border: solid 2px #ffffff;
     }
-    
-    
     body.Nocturno .numeros p{
         color: white;
         border-color: white;
+        background-color: #37383c;
     }
     
     body.Nocturno .SocialIcon a {
