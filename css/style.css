@@ -1260,20 +1260,5 @@ body.Nocturno footer{
         color: white;
     }
     
-    .MascaraDiv{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(85, 46, 229, 0);
-        z-index: 10;
-        
-    }
-    
-    .MascaraDiv:hover{
-        background-color: rgba(85, 46, 229, 0.5);
-        
-    }
-    .MascaraDiv:hover .ContenedorBoton,
-    .MascaraDiv:hover .ContenedorTexto{
-        opacity: 1;
-    }
+
+}
