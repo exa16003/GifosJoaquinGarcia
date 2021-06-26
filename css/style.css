@@ -56,6 +56,7 @@
 }
 
 .Fullgif-contenedor{
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -98,7 +99,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(85, 46, 229, 0);
-    z-index: 10;
+    z-index: 11;
     
 }
 
@@ -106,6 +107,7 @@
     background-color: rgba(85, 46, 229, 0.5);
     
 }
+
 .MascaraDiv:hover .ContenedorBoton,
 .MascaraDiv:hover .ContenedorTexto{
     opacity: 1;
@@ -115,6 +117,7 @@
     display: flex;
     position: absolute;
     left: 1.9rem;
+    top: 0.5rem;
     opacity:0 ;
     z-index: 5;
 }
@@ -656,17 +659,17 @@ body.Nocturno footer{
 
 
 .ContenedorBoton{
-        left: 11rem;
+        left: 11.5rem;
     
 }
 
 .ContenedorTexto{
-        top: 13rem;
+        top: 15rem;
         color: #ffffff;
 }
 
 .Formulario{
-    width: 33%;
+    width: 50%;
     justify-content: center;
 }
 
@@ -681,8 +684,8 @@ body.Nocturno footer{
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
-    height: 16rem;
-    margin-bottom: 4rem;
+    height: 18rem;
+    margin-bottom: 2rem;
     z-index: 1;
 }
 
@@ -779,7 +782,7 @@ body.Nocturno footer{
     .menu ul li>a{
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
-        font-size: 1.3rem;
+        font-size: 1rem;
         line-height: 1.88rem;
         text-transform: capitalize;
         letter-spacing: 0;
@@ -1262,5 +1265,16 @@ body.Nocturno footer{
         color: white;
     }
     
-
+    .Fullgif-contenedor{
+        width: 30%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background: transparent;
+        padding: 5rem 0;
+    }
 }
