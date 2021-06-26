@@ -387,6 +387,7 @@ ul{
     position: relative;
     padding: 15px 20px;
     text-decoration: none;
+    z-index: 77;
     
 }
 
@@ -423,6 +424,7 @@ span{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    z-index: 1;
 }
 
 .IlustracionHome{
@@ -592,17 +594,6 @@ body.Nocturno header{
     background-color: #37383c;
 }
 
-body.Nocturno .Logo{
-    content:url(assets/Logo-modo-noc.svg)
-}
-body.Nocturno .BtmCrearGif{
-    content: url(assets/CTA-crear-gifo-modo-noc.svg);
-}
-
-body.Nocturno .BtmCrearGif:hover{
-    content: url(assets/CTA-crear-gifo-hover-modo-noc.svg);
-}
-
 body.Nocturno #span1{
     background-color:  #ffffff;
 }
@@ -652,22 +643,6 @@ body.Nocturno .trending{
 
 body.Nocturno footer{
     border-bottom: 0.31rem solid #222326;
-}
-
-body.Nocturno .btnIzquierda{
-    content: url(assets/button-slider-left-md-noct.svg);
-}
-
-body.Nocturno .btnDerecha{
-    content: url(assets/button-slider-right-md-noct.svg);
-}
-
-body.Nocturno .btnIzquierda:hover{
-    content: url(assets/button-slider-right-md-noct.svg);
-}
-
-body.Nocturno .btnDerecha:hover{
-    content: url(assets/button-slider-left-md-noct.svg);
 }
 
 .hide{
@@ -740,7 +715,7 @@ body.Nocturno .btnDerecha:hover{
 
     .Logo{
         padding: 10px;
-        width: 90%;
+        width: 60%;
     }
     
     /*Menu*/
@@ -768,10 +743,13 @@ body.Nocturno .btnDerecha:hover{
     ul a:hover{
         border-bottom: 2px solid #5ed7c6;
     }
-
+    
     .BtmCrearGif:hover{
-        border-bottom: none ;
-        content: url(assets/CTA-crear-gifo-active.svg);
+        border-bottom: none;
+    }
+
+    .ImgCrear:hover{
+        content: url("/assets/CTA-crear-gifo-active.svg"); 
     }
 
 
@@ -847,6 +825,7 @@ body.Nocturno .btnDerecha:hover{
         grid-template-columns: repeat(auto-fit, 20%);
         gap: 20px;
         justify-content: center;
+        
     }
 
     .btnIzquierda{
@@ -906,11 +885,11 @@ body.Nocturno .btnDerecha:hover{
     }
     
     .btnIzquierda:hover{
-        content: url(assets/button-slider-left-hover.svg);
+        content: url("/assets/button-slider-left-hover.svg");
     }
 
     .btnDerecha:hover{
-        content: url(assets/Button-Slider-right-hover.svg);
+        content: url("/assets/Button-Slider-right-hover.svg");
     }
 
     .Text{
@@ -935,14 +914,20 @@ body.Nocturno .btnDerecha:hover{
         text-align: center;
     }
     
-    .fav , .MisGifos , .favImg{
+    .fav , .MisGifos{
         height: 100%;
         padding: 1rem 1.5rem;
         display: flex;
         flex-flow: column nowrap;
         align-items: center
     }
-    
+    .favImg{
+        height: 100%;
+        padding: 1rem 1.5rem;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center
+    }
     h2{
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -1246,10 +1231,7 @@ body.Nocturno .btnDerecha:hover{
         color: white;
         background-color: #5c47a5;
     }
-    body.Nocturno .camar{
-        content: url(assets/camara-modo-noc.svg);
     
-    }
     body.Nocturno .lupa{
         color: #ffffff;
     }
@@ -1258,10 +1240,6 @@ body.Nocturno .btnDerecha:hover{
         border: solid 2px #ffffff;
     }
     
-    body.Nocturno .film img{
-    content: url(assets/pelicula-modo-noc.svg);
-    
-    }
     
     body.Nocturno .numeros p{
         color: white;

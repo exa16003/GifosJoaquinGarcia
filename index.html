@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <a href="home.html"><img src="assets/logo-desktop.svg" alt="Logo" class="Logo"></a>
+        <a href="index.html"><img src="/assets/logo-desktop.svg" alt="Logo" class="Logo"></a>
         <div>     
             <input type="checkbox" id="btn-menu">
             <label for="btn-menu" class="lbl-menu">
@@ -27,7 +27,7 @@
                         <li class="line"></li>
                         <li><a href="#" tabindex="3" id="MenuFavoritos">FAVORITOS</a></li>
                         <li class="line"></li>
-                        <li><a  class="BtmCrearGif" href="#" tabindex="4"><img src="assets/button-crear-gifo.svg" alt=""></a></li>                
+                        <li><a  class="BtmCrearGif" href="#" tabindex="4"><img src="/assets/button-crear-gifo.svg" alt="" class="ImgCrear"></a></li>                
                     </ul>
                 </nav>  
         </div> 
@@ -53,7 +53,7 @@
             <div class="busquedah2"></div>
             <div class="impresionBusq impresion"></div>
             <div class="NoBusqueda hide">
-                <img src="assets/icon-busqueda-sin-resultado.svg" alt="">
+                <img src="/assets/icon-busqueda-sin-resultado.svg" alt="">
                 <p>Intenta con otra búsqueda</p>
             </div>
             <a class="VerMas hide ">Vermas</a>
@@ -63,24 +63,24 @@
             <h2>Favoritos</h2>
             <div class="ImpresionFav"></div>
                 <div class="favImg" >
-                    <img src="assets/icon-mis-gifos-sin-contenido.svg" alt="iconoVacio" class="ImgGrande">
+                    <img src="/assets/icon-mis-gifos-sin-contenido.svg" alt="iconoVacio" class="ImgGrande">
                     <h3>Guarda tu primer GIFO en favoritos para que se muestre aquí</h3>
                 </div>
         </section>
         <section class="MisGifos">
-            <img src="assets/icon-mis-gifos.svg" alt="Migifo" class="ImgChica ">
+            <img src="/assets/icon-mis-gifos.svg" alt="Migifo" class="ImgChica ">
             <h2>Mis GIFOS</h2>
             <div class="ImpresionMigif "></div>                
-                <div class="MiGifImg">
-                    <img src="assets/icon-mis-gifos-sin-contenido.svg" alt="iconoVacio" class="ImgGrande">
+                <div class="MiGifImg fav">
+                    <img src="/assets/icon-mis-gifos-sin-contenido.svg" alt="iconoVacio" class="ImgGrande">
                     <h3>¡Animate a crear tu primer GIFO!</h3>
                 </div>                
         </section>
         <section class="CrearGifo">
             <div class="layeout">               
                 <div class="camara">
-                    <div class="camar"><img src="assets/camara.svg" alt="camara"></div>
-                    <div class="luz"><img src="assets/Path-2.svg" alt="luz"></div>
+                    <div class="camar"><img src="/assets/camara.svg" alt="camara" id="cam"></div>
+                    <div class="luz"><img src="/assets/Path-2.svg" alt="luz"></div>
                 </div>
                 <div class="upload">
                     <div class="IzqSup"></div>
@@ -109,12 +109,12 @@
                     <div class="overlay hide " id="overlay_video">
                         <div class="gifo__buttons" id="overlay_video_actions">                            
                         </div>
-                        <div class="overlay__info" id="overlay_video_info"><img src="assets/loader.svg" class="overlay__icon" alt="loading gifo" id="overlay_video_icon"/>
+                        <div class="overlay__info" id="overlay_video_info"><img src="/assets/loader.svg" class="overlay__icon" alt="loading gifo" id="overlay_video_icon"/>
                         <p class="contadorTexto" id="overlay_video_text">Estamos subiendo tu GIFO</p>
                         </div>
                     </div>  
                     <video class="recording hide" src="#" id="recording_video"></video>
-                    <img src="#" id="recorded_gifo" class="recording"/>
+                    <img src="" id="recorded_gifo" class="recording"/>
                     <div class="barra"></div>
                     <a href="#" class="Comenzar">Comenzar</a>
                     <a href="#" class="Grabar hide">Grabar</a>
@@ -122,7 +122,7 @@
                     <a href="#" class="Subir hide">Subir Gifo</a>
                 </div>
                 <div class="film">
-                    <img src="assets/pelicula.svg" alt="film-img">
+                    <img src="/assets/pelicula.svg" alt="film-img" class="film-img">
                 </div>
             </div>
         </section>
@@ -130,9 +130,9 @@
             <h2>Trending GIFOS</h2>
             <p class="Text">Mira los últimos <br> GIFOS de nuestra comunidad.</p>
             <div class="Trending-contenedor">
-                <a href=""> <img src="assets/button-slider-left.svg" alt="izquierda" class="btnIzquierda"></a>
+                <a href=""> <img src="/assets/button-slider-left.svg" alt="izquierda" class="btnIzquierda"></a>
                 <div class="trendingContenedor"></div>
-                <a href=""><img src="assets/Button-Slider-right.svg" alt="derecha" class="btnDerecha"></a>
+                <a href=""><img src="/assets/Button-Slider-right.svg" alt="derecha" class="btnDerecha"></a>
             </div>
         </section>
     </main>
@@ -149,10 +149,11 @@
             <p class="textoChico">© GIFOS 2021 — All Rights Reserved</p>
         </div>
     </footer>
-    <script src="js/ModoNoct.js"></script>
-    <script src="js/CallApi.js"></script>
+    <script src="/js/nocturno.js"></script>
+    <script src="/js/ModoNoct.js"></script>
+    <script src="/js/CallApi.js"></script>
     <script src="js/search.js"></script>
-    <script src="js/Creategifo.js"></script>
+    <script src="/js/Creategifo.js"></script>
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
     
 </body>
