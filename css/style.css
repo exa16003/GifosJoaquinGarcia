@@ -749,7 +749,7 @@ body.Nocturno footer{
     }
 
     .ImgCrear:hover{
-        content: url("assets/CTA-crear-gifo-active.svg"); 
+        content: url("/assets/CTA-crear-gifo-active.svg"); 
     }
 
 
@@ -885,11 +885,11 @@ body.Nocturno footer{
     }
     
     .btnIzquierda:hover{
-        content: url("assets/button-slider-left-hover.svg");
+        content: url("/assets/button-slider-left-hover.svg");
     }
 
     .btnDerecha:hover{
-        content: url("assets/Button-Slider-right-hover.svg");
+        content: url("/assets/Button-Slider-right-hover.svg");
     }
 
     .Text{
