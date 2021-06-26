@@ -50,6 +50,7 @@ TraerCategoria()
       botonCategoria[i].addEventListener("click", async ()=>{
       
         Busqueda.value=botonCategoria[i].innerHTML
+        H2 = Busqueda.value
         mostrarYTraer(botonCategoria[i].innerHTML)
 
       })

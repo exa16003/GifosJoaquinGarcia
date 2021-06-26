@@ -1,5 +1,5 @@
 /*secciones de Dom*/
-const MODONOCT=document.querySelector(".ModoNoct");
+
 const Fav=document.querySelector(".fav")
 const MisGifos=document.querySelector(".MisGifos")
 const CrearGifo=document.querySelector(".CrearGifo")
@@ -17,15 +17,6 @@ const MenuCreargif=document.querySelector(".BtmCrearGif")
     CrearGifo.classList.add("hide")
     Home.classList.remove("hide")
     
-MODONOCT.addEventListener("click" ,() => {
-    document.body.classList.toggle("Nocturno");
-    if (MODONOCT.innerHTML==="MODO NOCTURNO"){
-        MODONOCT.innerHTML="MODO DIURNO"
-    }
-    else{
-        MODONOCT.innerHTML="MODO NOCTURNO"
-    }
-});
 
 MenuHome.addEventListener("click", () => {
     Fav.classList.add("hide")
