@@ -1226,8 +1226,10 @@ body.Nocturno footer{
         
     }
 
-
-    .Comenzar:hover, .Grabar:hover , .Finzalizar:hover, .Subir:hover{
+    .Comenzar:hover, 
+    .Grabar:hover , 
+    .Finzalizar:hover, 
+    .Subir:hover{
         color: white;
         background-color: #5c47a5;
     }
@@ -1256,4 +1258,22 @@ body.Nocturno footer{
 
     body.Nocturno #Value{
         color: white;
+    }
+    
+    .MascaraDiv{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(85, 46, 229, 0);
+        z-index: 10;
+        
+    }
+    
+    .MascaraDiv:hover{
+        background-color: rgba(85, 46, 229, 0.5);
+        
+    }
+    .MascaraDiv:hover .ContenedorBoton,
+    .MascaraDiv:hover .ContenedorTexto{
+        opacity: 1;
     }
