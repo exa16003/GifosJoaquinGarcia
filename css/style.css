@@ -372,7 +372,7 @@ ul{
     display: none;
     background-color:#572EE5;
     opacity: 90%;
-    z-index: 10;
+    z-index: 80;
     
 }
 
@@ -536,7 +536,7 @@ h3{
     color: #5ed7c6;
 }
 
-.MisGifos{
+.MisGifos, .favImg{
     height: 100%;
     padding: 1rem 1.5rem;
     display: flex;
@@ -925,6 +925,7 @@ body.Nocturno footer{
         flex-flow: column nowrap;
         align-items: center
     }
+    
     .favImg{
         height: 100%;
         padding: 1rem 1.5rem;
