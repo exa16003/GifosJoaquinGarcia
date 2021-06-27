@@ -584,6 +584,9 @@ footer{
     line-height: 1.25rem;
     text-align: center;
 }
+.foot{
+    text-align: center;
+}
 
 .SocialIcon a {
     color: #37383c;
